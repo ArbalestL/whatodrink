@@ -1,0 +1,35 @@
+/* Phone-first refinements; desktop retains the original two-column wine-menu layout. */
+@media(max-width:700px){
+  html{scroll-padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+  body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+  .masthead{padding:16px 20px}.brand-mark{font-size:32px}.header-note{font-size:12px}
+  main{padding:22px 20px calc(110px + env(safe-area-inset-bottom))}
+  .workspace{border:0;display:block}.conversation,.result .conversation{padding:0}
+  .enter{animation:none}.topline{gap:10px}.step-count{font-size:14px}
+  .category h1{margin-top:24px;font-size:2.15rem}.category .subtext{font-size:1rem}
+  .category .showcase,.quiz .showcase{display:none}
+  .category-card{padding:20px 15px;min-height:180px}.category-card>span:not(.category-kicker):not(.card-arrow){font-size:14px}
+  .random-card{padding:20px 16px;min-height:96px}.random-card small{font-size:14px;line-height:1.6}
+  .category-bottom{font-size:14px}.under-note{font-size:12px;line-height:1.7}
+  .quiz h1{font-size:1.75rem}.quiz .subtext{font-size:1rem}.step-labels{font-size:14px}
+  .choices{gap:10px}.quiz .choice>span,.multi-choices .choice>span{min-height:82px;padding:12px}
+  .quiz .choice b,.grouped-choices .choice b{font-size:1rem}.quiz .choice small{font-size:12px}
+  .group-label{font-size:16px}.taste-tools{font-size:14px}.taste-tools button{font-size:14px}
+  .text-button,.quote-heading button{min-height:44px}.kind-back{font-size:14px}
+  .quiz .actions,.result .actions{position:fixed;z-index:30;left:0;right:0;bottom:0;margin:0;padding:14px 20px calc(14px + env(safe-area-inset-bottom));background:#101311;border-top:1px solid var(--line);gap:12px}
+  .actions .primary,.actions .edit-button{min-height:52px;font-size:1rem}.actions .primary{padding:13px 18px}
+  .quiz .actions>.text-button{padding:12px 10px}.selection-summary{font-size:14px;line-height:1.7;margin-top:20px}
+  .result h1{font-size:2rem;overflow-wrap:anywhere}.english-name{font-size:1.5rem;overflow-wrap:anywhere}
+  .tags{gap:7px}.tag{font-size:12px;padding:5px 9px}.metrics{margin-bottom:10px;padding:18px 0}
+  .metrics small{font-size:12px}.result .metrics strong{font-size:21px}.result .metrics div:last-child strong{font-size:16px}
+  .quote-heading,.quote-heading button{font-size:14px}.quote p{font-size:1.4rem}.quote-translation{font-size:1rem}.quote .source{display:inline-block;padding:8px 0;line-height:1.7;min-height:44px}
+  .result .showcase{min-height:0;height:380px;margin-top:16px}.result .showcase>img{top:12px;height:250px}.result .photo-copy{bottom:18px;left:20px;right:20px}.result .photo-copy h2{font-size:26px}.result .photo-rule{margin:10px 0}.result .drink-initial{font-size:155px}
+  .details{gap:24px;margin-top:24px}.details h2{font-size:18px}.details p{font-size:1rem;line-height:1.85}.ingredients li{font-size:14px}.source-links .source{min-height:44px;display:flex;align-items:center}
+  .mismatch-toast{bottom:calc(94px + env(safe-area-inset-bottom));max-width:calc(100vw - 32px);padding:8px 10px 8px 16px;gap:10px}.mismatch-toast button{min-width:44px;min-height:44px}
+  footer{padding:0 20px calc(110px + env(safe-area-inset-bottom));font-size:12px}
+}
+@media(max-width:360px){
+  main{padding-left:16px;padding-right:16px}.category-grid{gap:10px}.category-card{padding:18px 12px}.category-card strong{font-size:25px}.random-symbol{display:none}
+  .result .metrics strong{font-size:19px}.result .metrics div:last-child strong{font-size:14px}.metrics div+div{padding-left:10px}
+  .actions .edit-button{padding:12px}.quiz .choice b{font-size:15px}
+}

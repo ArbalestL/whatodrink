@@ -1,0 +1,25 @@
+/* Direct-answer controls and image-first result presentation. */
+.choice-single{appearance:none;width:100%;padding:0;border:0;background:transparent;color:inherit;text-align:left;min-width:0}
+.choice-single>span{height:100%}.choice-single[aria-pressed="true"]>span{background:#293026;border-color:var(--gold)}
+.choice-single[aria-pressed="true"]>span:after{content:'✓';color:var(--gold);padding-left:8px}
+.choices .choice:last-child:nth-child(odd){grid-column:auto}.single-actions{justify-content:flex-start}
+.result-feature{min-width:0;padding:28px;background:#101511}
+.result .result-feature .showcase{height:440px;min-height:0}
+.result .result-feature .showcase>img{top:12px;height:calc(100% - 24px)}
+.result .showcase:after,.result .photo-copy{display:none}
+.result #quote-slot{border-top:1px solid var(--line);margin-top:24px;padding-top:22px}
+.result .quote-heading{font-size:14px;margin-bottom:14px;line-height:1.6}
+.result .quote{margin:0;padding-left:18px}.result .quote p{font-size:22px;line-height:1.55;margin-bottom:10px;overflow-wrap:anywhere}
+.result .quote-translation{font-size:16px;line-height:1.8;margin-bottom:0}
+.result .quote cite{display:block;text-align:right;font-style:normal;margin-top:12px}
+.result .quote cite .source{display:inline-block;max-width:100%;font-size:14px;line-height:1.7;text-align:right;overflow-wrap:anywhere;padding:8px 0;min-height:44px}
+.result .reset-button{display:block;width:100%;text-align:center;margin-top:14px}.result h1{margin-top:0}
+@media(max-width:700px){
+ .brand{font-size:17px;letter-spacing:1.5px}.brand-mark{padding-right:14px}.brand small{letter-spacing:2px}
+ .result-feature{padding:0;background:transparent}.result .result-feature .showcase{height:320px;margin-top:8px}
+ .result #quote-slot{margin-top:22px;padding-top:20px}.result .quote p{font-size:21px}.result .quote cite .source{font-size:13px}
+ .quiz .actions.single-actions{justify-content:flex-start}.quiz .single-actions>.text-button{min-width:108px;text-align:left}
+ .step-labels{gap:8px;font-size:13px}.quiz .choice b{overflow-wrap:anywhere}
+}
+.quiz .choice-any>span,.quiz .choice-any[aria-pressed]>span{border-color:#cfb98c;background:#383426;color:#f2dba9}.quiz .choice-any small{color:#d2c4a4}
+.quiz .taste-tools [data-action="clear-tastes"]{display:none}
